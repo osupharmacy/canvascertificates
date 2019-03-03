@@ -1,0 +1,58 @@
+<!--Link to the Google Fonts you want to use-->
+<link href="https://fonts.googleapis.com/css?family=Cabin|Roboto:400,700|Roboto+Condensed:400,700"rel="stylesheet">
+
+<!--Here is where we set the background image to use, tweak the h1-6 tags and padding setting to make things fit right, there is probably a better way I just don't css much.-->
+<style>
+.div1{
+background-image: url("https://coursecontent.sfo2.digitaloceanspaces.com/CertificateImages/ContinuingEducationCertificatePharmacy.jpg");
+background-size: 1024px 750px;
+background-repeat: no-repeat;
+border: none;
+height: 750px;
+box-sizing: border-box;
+padding: 30px 210px 0;
+text-align:center;
+}
+h1 { 
+  display: block;
+  margin-top: 0.67em;
+  margin-bottom: 0.67em;
+  Font-weight: normal;
+  Font-Family: 'Cabin', Sans-Serif;
+  Font-Size: 35px;
+}
+h2 { 
+  display: block;
+  margin-top: 0.67em;
+  margin-bottom: 0.67em;
+  font-weight: bold;
+  Font-Family: 'Roboto Condensed', Sans-Serif;
+  Font-Size: 45px;
+}
+h3{ 
+  display: block;
+  margin-top: 0.87em;
+  margin-bottom: 0.67em;
+  font-weight: normal;
+  Font-Family: 'Cabin', Sans-Serif;
+  Font-Size: 33px;
+}
+h4{ 
+  display: block;
+  margin-top: 3.43em;
+  margin-bottom: 0.64em;
+  font-weight: normal;
+  Font-Family: 'Cabin', Sans-Serif;
+  Font-Size: 25px;
+}
+</style>
+
+<!--HTML area, this is where we can change the text displayed on the certificates we can use the canvas variables here to!-->
+<div class="div1">
+<img src="{{catalog_logo}}" />
+<h1>Awards this certificate of completion to:</h1>
+<h2>{{student_name}}</h2>
+<h3>for the successful completion of:</h3>
+<h3>{{award_name}}</h3>
+<h4>{{completion_date}}</h4>
+</div>
